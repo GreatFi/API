@@ -1,1 +1,6 @@
 .env
+*.db
+__pycache__/
+
+alembic/__pycache__/
+.venv/

@@ -1,3 +1,4 @@
-build the page where all tasks are viewed
-then where tasks are written
+get the database and migrations up and running
+build the page where tasks are created 
+then where tasks are viewed
 edits,deleting and the rest
