@@ -5,11 +5,19 @@ import dotenv
 
 dotenv.load_dotenv()
 engine = create_engine(os.environ.get("database_url"), echo=True)
-metadata_obj = MetaData()
 
 
 class Base(DeclarativeBase):
     pass
+
+class User(Base):
+
+    __tablename__ = "User"
+
+    id:Mapped[int] = mapped_column(primary_key=True)
+    username :Mapped[str] = mapped_column(String(40), nullable=False)
+    password:Mapped[str] = mapped_column(String(255), nullable=False)
+    disabled:Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
 
 
 class Task(Base):
@@ -22,4 +30,4 @@ class Task(Base):
     is_completed : Mapped[bool] = mapped_column(Boolean, default=False)
 
 
-metadata_obj.create_all(engine)
+

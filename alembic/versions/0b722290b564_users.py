@@ -1,8 +1,8 @@
-"""Added nullable fields
+"""Users
 
-Revision ID: 716bfc08e811
-Revises: 9b741d162f49
-Create Date: 2026-03-07 22:18:29.566441
+Revision ID: 0b722290b564
+Revises: 58976313509d
+Create Date: 2026-03-16 12:16:25.706865
 
 """
 from typing import Sequence, Union
@@ -12,8 +12,8 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision: str = '716bfc08e811'
-down_revision: Union[str, Sequence[str], None] = '9b741d162f49'
+revision: str = '0b722290b564'
+down_revision: Union[str, Sequence[str], None] = '58976313509d'
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
 
